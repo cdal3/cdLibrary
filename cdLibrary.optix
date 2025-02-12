@@ -1,0 +1,44 @@
+Project:
+ Name: cdLibrary
+ GUID: 8baab235ec68901ba06371bf6ff1d0e1
+ ProjectNamespaceIndex: 4
+ Description: ''
+ Company: ''
+ Copyright: ''
+ FormatVersion: 1
+ ProductVersion: 1.5
+ CoreVersion: 4.0
+ Dependencies:
+  2:
+   Uri: 'urn:FTOptix:CoreBase'
+   Module: FTOptix.CoreBase
+   Version: 4.0
+  3:
+   Uri: 'urn:FTOptix:HMIProject'
+   Module: FTOptix.HMIProject
+   Version: 6.5
+  6:
+   Uri: 'urn:FTOptix:MicroController'
+   Module: FTOptix.MicroController
+   Version: 3.1
+  7:
+   Uri: 'urn:FTOptix:NetLogic'
+   Module: FTOptix.NetLogic
+   Version: 4.0
+  8:
+   Uri: 'urn:FTOptix:CommunicationDriver'
+   Module: FTOptix.CommunicationDriver
+   Version: 3.0
+ Statistics:
+  TotalNodeCount: 1210
+  Objects: 50
+  ObjectTypes: 2
+  Variables: 1156
+  VariableTypes: 0
+  DataTypes: 0
+  Methods: 2
+  References: 6
+  ReferenceTypes: 0
+  Files: 44
+ Nodes:
+ - File: Nodes/cdLibrary.yaml

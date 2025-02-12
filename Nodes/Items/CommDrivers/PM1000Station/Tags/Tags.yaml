@@ -1,0 +1,37 @@
+Name: Tags
+Type: FolderType
+Children:
+- File: UserConfigurableTableResults/UserConfigurableTableResults.yaml
+- File: AnalogInputConfiguration/AnalogInputConfiguration.yaml
+- File: AdvancedConfiguration/AdvancedConfiguration.yaml
+- File: SerialRS485PortConfiguration/SerialRS485PortConfiguration.yaml
+- File: EthernetConfiguration/EthernetConfiguration.yaml
+- File: DateAndTimeConfiguration/DateAndTimeConfiguration.yaml
+- File: LogConfiguration/LogConfiguration.yaml
+- File: CommandTable/CommandTable.yaml
+- File: LogRequestTable/LogRequestTable.yaml
+- File: ControllerInterfaceTable/ControllerInterfaceTable.yaml
+- File: DiscreteResults/DiscreteResults.yaml
+- File: WiringDiagnosticsResults/WiringDiagnosticsResults.yaml
+- File: VoltAmpsFrequencyResults/VoltAmpsFrequencyResults.yaml
+- File: PowerResults/PowerResults.yaml
+- File: EnergyResults/EnergyResults.yaml
+- File: DemandResults/DemandResults.yaml
+- File: UnitStatusLogResults/UnitStatusLogResults.yaml
+- File: EnergyLogResults/EnergyLogResults.yaml
+- File: WriteErrorStatusResults/WriteErrorStatusResults.yaml
+- File: UnitRunStatusResults/UnitRunStatusResults.yaml
+- File: MinMaxLogResults/MinMaxLogResults.yaml
+- File: LoadFactorLogResults/LoadFactorLogResults.yaml
+- File: TimeOfUseLogResultsRealEnergyAndDemand/TimeOfUseLogResultsRealEnergyAndDemand.yaml
+- File: TimeOfUseLogResultsReactiveEnergyAndDemand/TimeOfUseLogResultsReactiveEnergyAndDemand.yaml
+- File: TimeOfUseLogResultsApparentEnergyAndDemand/TimeOfUseLogResultsApparentEnergyAndDemand.yaml
+- File: CatalogNumberAndWin/CatalogNumberAndWin.yaml
+- File: SingleElementPasswordWrite/SingleElementPasswordWrite.yaml
+- File: UserConfigurableTableSetup/UserConfigurableTableSetup.yaml
+- File: SecurityPolicyConfiguration/SecurityPolicyConfiguration.yaml
+- File: SecurityPolicyStatus/SecurityPolicyStatus.yaml
+- File: SecurityUserName/SecurityUserName.yaml
+- File: SecurityPassword/SecurityPassword.yaml
+- File: AlarmStatusResults/AlarmStatusResults.yaml
+- File: AlarmLogResults/AlarmLogResults.yaml

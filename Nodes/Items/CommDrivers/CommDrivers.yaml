@@ -1,0 +1,15 @@
+Name: CommDrivers
+Type: FolderType
+Children:
+- Name: PM1000Station
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "3719370f02991a6be72f86ce63652b2c"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - File: PM1000Station/PM1000Station.yaml

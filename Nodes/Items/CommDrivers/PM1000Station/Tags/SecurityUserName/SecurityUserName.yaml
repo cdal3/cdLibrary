@@ -1,0 +1,15 @@
+Name: SecurityUserName
+Type: FolderType
+Children:
+- Name: Username
+  Type: MicroControllerTag
+  DataType: String
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ST47:0"
+  - Name: ArrayUpdateMode
+    Type: BaseDataVariableType
+    DataType: TagArrayUpdateMode
+    ModellingRule: Optional

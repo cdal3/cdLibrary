@@ -1,0 +1,15 @@
+Name: SecurityPolicyStatus
+Type: FolderType
+Children:
+- Name: Security_Policy_Status_Word
+  Type: MicroControllerTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "N46:0"
+  - Name: ArrayUpdateMode
+    Type: BaseDataVariableType
+    DataType: TagArrayUpdateMode
+    ModellingRule: Optional

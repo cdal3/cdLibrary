@@ -1,0 +1,58 @@
+Name: PM1000Station
+Id: g=5c8cf632c2766940ffa4a5bb4733ac90
+Supertype: MicroControllerStation
+Children:
+- Class: Reference
+  Target: ns=8;i=29
+  Direction: Forward
+- Class: Reference
+  Target: ns=8;i=30
+  Direction: Forward
+- Class: Reference
+  Target: ns=8;i=67
+  Direction: Forward
+- Class: Reference
+  Target: ns=8;i=31
+  Direction: Forward
+- Class: Reference
+  Target: ns=8;i=94
+  Direction: Forward
+- Class: Reference
+  Target: ns=8;i=96
+  Direction: Forward
+- Name: IPAddress
+  Type: BaseDataVariableType
+  DataType: String
+- Name: NodeAddress
+  Type: BaseDataVariableType
+  DataType: Byte
+  Value: 1
+- Name: ErrorChecking
+  Type: BaseDataVariableType
+  DataType: ErrorChecking
+- Name: Timeout
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:00:00:10.0000000"
+- Name: MaxRetries
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 3
+- Name: ConnectionTimeout
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:00:00:03.0000000"
+- Name: ACKTimeout
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:00:00:03.0000000"
+- Name: OperationCode
+  Type: BaseDataVariableType
+  DataType: CommunicationOperationCode
+  AccessLevel: Read
+- File: Tags/Tags.yaml
+- Name: Types
+  Type: FolderType
+  Children:
+  - File: DataTypes/DataTypes.yaml
+  - File: VariableTypes/VariableTypes.yaml

@@ -1,0 +1,46 @@
+Name: Scripts
+Type: FolderType
+Children:
+- Name: ImportExportMicroControllerTagCsvFile
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "6104e8f2b2b75d5b75d04a64bdb9d040"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: ImportExportMicroControllerTagCsvFile
+    Id: g=a56dd09829760c595d71d0cdbb8f21db
+    Supertype: NetLogic
+    ReferenceType: HasComponent
+    Children:
+    - Name: BehaviourStartPriority
+      Type: BehaviourStartPriorityVariableType
+      DataType: Byte
+      Value: 180
+    - Class: Method
+      Name: ExportTags
+    - Class: Method
+      Name: ImportTags
+    - Name: CsvPath
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "ns=4;%PROJECTDIR%/MicroControllerTags.csv"
+    - Name: FieldSeparator
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ","
+    - Name: WrapFields
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: MicroControllerDriver
+      Type: NodePointer
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/CommunicationDriver/MicroControllerDriver"
