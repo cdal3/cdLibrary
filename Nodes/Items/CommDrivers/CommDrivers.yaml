@@ -3,6 +3,7 @@ Type: FolderType
 Children:
 - Name: PM1000Station
   Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"Import as Instance on a Micro Controller Driver. Set the IP address of PowerMonitor in the PM1000Station properties. Tag names follow naming convention of the Data Tables in https://literature.rockwellautomation.com/idc/groups/literature/documents/um/1408-um002_-en-p.pdf, and they are mapped using PCCC addressing."}
   Children:
   - Name: LibraryItemGuid
     Type: BaseDataVariableType
