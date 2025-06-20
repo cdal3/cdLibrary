@@ -44,3 +44,32 @@ Children:
         Type: PropertyType
         DataType: NodeId
         Value: "/Types/ObjectTypes/BaseObjectType/CommunicationDriver/MicroControllerDriver"
+- Name: DataloggerVariablesSimulator
+  Type: ObjectLibraryItem
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "83ab879452e79982cd0dcd448b7d0d39"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: DataloggerVariablesSimulator
+    Id: g=4e54a0b7bb85a7c60f9c706a26424764
+    Supertype: NetLogic
+    ReferenceType: HasComponent
+    Children:
+    - Name: iSin
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: iCos
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: iRamp
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: bRunSimulation
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
