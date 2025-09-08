@@ -3,3 +3,220 @@ Type: FolderType
 Children:
 - File: CommDrivers/CommDrivers.yaml
 - File: Scripts/Scripts.yaml
+- Name: UISessionDomain
+  Type: ObjectLibraryItem
+  Description: {"LocaleId":"","Text":"This UISession Objects adds a 'UserFullName' to provide the Domain User Full Name at runtime. Note: This will only work on a Windows operating system and is not cross platform."}
+  Children:
+  - Name: LibraryItemGuid
+    Type: BaseDataVariableType
+    DataType: Guid
+    Value: "eb327c9a56c60b9debce788f8f8524d3"
+  - Name: LibraryItemVersion
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1
+  - Name: UISessionDomain
+    Id: g=d576513e19a279d4687253efb739522a
+    Supertype: UISession
+    Children:
+    - Name: IsInteractive
+      Type: BaseDataVariableType
+      DataType: Boolean
+      AccessLevel: Read
+      Value: true
+    - Name: IsNative
+      Type: BaseDataVariableType
+      DataType: Boolean
+      AccessLevel: Read
+    - Name: IsWeb
+      Type: BaseDataVariableType
+      DataType: Boolean
+      AccessLevel: Read
+    - Name: IpAddress
+      Type: BaseDataVariableType
+      DataType: String
+      AccessLevel: Read
+    - Name: StyleSheet
+      Type: NodePointer
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
+    - Name: User
+      Type: NodePointer
+      DataType: NodeId
+      AccessLevel: Read
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/UserType"
+    - Name: ActualLocaleId
+      Type: BaseVariableType
+      DataType: LocaleId
+      ReferenceType: HasProperty
+    - Name: ActualLanguage
+      Type: BaseVariableType
+      DataType: LocaleId
+      ReferenceType: HasProperty
+    - Name: ActualMeasurementSystem
+      Type: BaseVariableType
+      DataType: MeasurementSystem
+      ReferenceType: HasProperty
+    - Name: TimeZoneOffset
+      Type: BaseVariableType
+      DataType: TimeZoneDataType
+      ReferenceType: HasProperty
+      AccessLevel: Read
+    - Name: Groups
+      Type: BaseObjectType
+    - Name: Roles
+      Type: BaseObjectType
+    - Name: Rights
+      Type: BaseObjectType
+    - Class: Reference
+      Target: ns=1;i=146
+      Direction: Forward
+    - Class: Reference
+      Target: ns=1;i=266
+      Direction: Forward
+    - Class: Reference
+      Target: ns=1;i=269
+      Direction: Forward
+    - Class: Reference
+      Target: ns=1;i=303
+      Direction: Forward
+    - Class: Reference
+      Target: ns=1;i=272
+      Direction: Forward
+    - Name: LoggedIn
+      Type: BaseVariableType
+      DataType: Boolean
+      AccessLevel: Read
+    - Name: UserFullName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Anonymous"
+    - Name: DomainLogic
+      Type: NetLogic
+      Children:
+      - Name: Username
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../User@BrowseName"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: Domain
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../User/Domain"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Class: Method
+        Name: GetUserFullName
+    - Name: UserSessionEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/AuditEventType/UserSessionEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../DomainLogic@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=2;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "GetUserFullName"
+      - Name: EventArguments
+        Type: UserSessionEvent
+        Children:
+        - Name: Username
+          Type: PropertyType
+          DataType: String
+        - Name: UserId
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SessionId
+          Type: PropertyType
+          DataType: NodeId
+        - Name: ActionTimeStamp
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Status
+          Type: PropertyType
+          DataType: Boolean
+        - Name: ServerId
+          Type: PropertyType
+          DataType: String
+        - Name: ClientAuditEntryId
+          Type: PropertyType
+          DataType: String
+        - Name: ClientUserId
+          Type: PropertyType
+          DataType: String
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
